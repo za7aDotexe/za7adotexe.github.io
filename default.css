@@ -185,6 +185,9 @@ h6 { font-size: 16px;}
 }
 
 .theme-dot{
+	display: flex;
+    justify-content: center;
+	align-items: center;
 	height: 30px;
 	width: 30px;
 	background-color: black;
@@ -205,21 +208,15 @@ h6 { font-size: 16px;}
 	border-width: 5px;
 }
 
-
+.fa-moon{
+	color: #fff;
+}
 #light-mode{
 	background-color: #fff;
 }
 
 #blue-mode{
 	background-color: #192734;
-}
-
-#green-mode{
-	background-color: #78866b;
-}
-
-#purple-mode{
-	background-color: #7E4C74;
 }
 
 #settings-note{
