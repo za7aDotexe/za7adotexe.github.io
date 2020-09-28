@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre&display=swap');
+
 :root{
 	--mainColor:#eaeaea;
 	--secondaryColor:#fff;
@@ -23,6 +25,7 @@ html, body{
 	padding: 0;
 	margin: 0;
 	scroll-behavior: smooth;
+	font-family: 'Averia Sans Libre', cursive;
 }
 
 body *{
@@ -32,13 +35,11 @@ body *{
 
 h1, h2, h3, h4, h5, h6, strong{
 	color: var(--mainText);
-	font-family: 'Russo One', sans-serif;
 	font-weight: 500;
 }
 
 p, li, span, label, input, textarea{
 	color: var(--secondaryText);
-	font-family: 'Roboto Mono', monospace;
 }
 
 a{
@@ -107,29 +108,23 @@ h6 { font-size: 16px;}
 
 
 .nav-wrapper{
+	display: flex;
 	border-radius:5px 5px 0 0;
 	grid-area:nav-wrapper;
 	border-bottom: 1px solid var(--borderColor);
-	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	background-color: var(--mainColor);
 }
 
-#navigation a{
-	color:var(--mainText);
+#navigation {
+    margin: 0;
+    padding: 10px;
 }
 
-
-#navigation{
-	margin:0;
-	padding: 10px;
-}
-
-#navigation li{
-	display: inline-block;
-	margin-right: 5px;
-	margin-left:5px;
+#navigation li {
+    display: inline-block;
+    margin: 0 15px 0 15px;
 }
 
 .dots-wrapper{
@@ -173,10 +168,10 @@ h6 { font-size: 16px;}
 	display: block;
 	margin:0 auto;
 
-	height: 200px;
-	width: 200px;
+    height: 237.3px;
+    width: 200px;
 	object-fit: cover;
-	border:2px solid var(--borderColor);
+	/* border:2px solid var(--borderColor); */
 }
 
 
