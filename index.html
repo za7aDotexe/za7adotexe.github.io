@@ -5,13 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
 	<link rel="stylesheet" type="text/css" href="default.css">
 	<link id="theme-style" rel="stylesheet" type="text/css" href="">
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 </head>
 <body>
 
 	<section class="s1">
 		<div class="main-container">
 			<div class="greeting-wrapper">
-				<h1>Hi, I'm Rabie ZAHA</h1>
+				<h1 id="typed3"></h1>
 			</div>
 
 
@@ -187,5 +188,17 @@
 		</div>
 	</section> 
 	<script type="text/javascript" src="script.js"></script>
+	<script>
+        var typed3 = new Typed('#typed3', {
+            strings: [
+                'Hi I\'m Rabie ZAHA',
+                'I made terrible pancke\'s'
+                ],
+            typeSpeed: 40,
+            backSpeed: 60,
+            smartBackspace: true, // this is a default
+            loop: true
+		});
+    </script>
 </body>
 </html>
