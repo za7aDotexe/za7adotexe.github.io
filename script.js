@@ -1,31 +1,28 @@
-// console.log('Its working')
-
 let theme = localStorage.getItem('theme')
+let toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
 
 if(theme == null){
-	setTheme('light')
+	setTheme(light);
 }else{
-	setTheme(theme)
+	setTheme(theme);
+	toggleSwitch.checked = true;
 }
 
-let themeDots = document.getElementsByClassName('theme-dot')
-
-
-for (var i=0; themeDots.length > i; i++){
-	themeDots[i].addEventListener('click', function(){
-		let mode = this.dataset.mode
-		// console.log('Option clicked:', mode)
-		setTheme(mode)
-	})
-}
-
-function setTheme(mode){
-	if(mode == 'light'){
+function setTheme(currentTheme){
+	if(currentTheme == 'light'){
 		document.getElementById('theme-style').href = 'default.css'
 	}
-
-	if(mode == 'blue'){
+	if(currentTheme == 'blue'){
 		document.getElementById('theme-style').href = 'blue.css'
 	}
-	localStorage.setItem('theme', mode)
+	localStorage.setItem('theme', currentTheme);
 }
+
+toggleSwitch.addEventListener( 'change', function() {
+    if(this.checked) {
+        setTheme('blue');
+    } else {
+	    setTheme('light');
+	}
+});

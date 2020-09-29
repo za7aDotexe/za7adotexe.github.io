@@ -39,11 +39,15 @@
 
 				<div class="left-column">
 					<img id="profile_pic" src="images/za7a.jpg">
-					<h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
+					<h5 style="text-align: center;line-height: 0;">Enable Dark Mode!</h5>
 
 					<div id="theme-options-wrapper">
-						<div data-mode="light" id="light-mode" class="theme-dot"><i class="fas fa-sun"></i></div>
-						<div data-mode="blue" id="blue-mode" class="theme-dot"><i class="fas fa-moon"></i></div>
+						<div class="theme-switch-wrapper">
+							<label class="theme-switch" for="checkbox">
+								<input type="checkbox" id="checkbox" />
+								<div class="slider round"></div>
+							</label>
+						</div>
 					</div>
 
 					<p id="settings-note">*Theme settings will be saved for<br>your next vist</p>
@@ -190,7 +194,7 @@
 		</div>
 	</section> 
 	<script type="text/javascript" src="script.js"></script>
-	<script>
+	<!-- <script>
         var typed3 = new Typed('#typed3', {
             strings: [
 				'Hello World 😀!',
@@ -203,7 +207,7 @@
             backSpeed: 70,
             smartBackspace: true, // this is a default
             loop: true
-		});
+		}); -->
     </script>
 </body>
 </html>
