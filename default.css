@@ -82,7 +82,7 @@ h6 { font-size: 16px;}
 	display: grid;
 	text-align: center;
 	align-content: center;
-	min-height: 10.5em;
+	min-height: 12em;
 }
 
 .intro-wrapper{
@@ -242,7 +242,7 @@ input:checked + .slider:before {
 #preview-shadow{
 	background-color: var(--previewShadow);
 	max-width: 300px;
-	height: 180px;
+	height: 127px;
 	padding-left: 30px;
 	padding-top: 30px;
 }
