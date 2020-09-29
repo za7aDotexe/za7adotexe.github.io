@@ -82,8 +82,7 @@ h6 { font-size: 16px;}
 	display: grid;
 	text-align: center;
 	align-content: center;
-	min-height: 10em;
-
+	min-height: 10.5em;
 }
 
 .intro-wrapper{
@@ -385,6 +384,15 @@ input:checked + .slider:before {
 }
 
 @media screen and (max-width: 1200px){
+	#navigation li {
+		display: inline-block;
+		margin: 0 5px 0 5px;
+	}
+
+	.greeting-wrapper{
+		min-height: 17.5em;
+	}
+
 	.main-container{
 		width: 95%;
 	}
@@ -406,10 +414,10 @@ input:checked + .slider:before {
 	#preview-shadow{
 		max-width: 280px;
 		height: 180px;
-		padding-left: 20px;
-		padding-top: 20px;
+		padding-left: 25px;
+		padding-top: 25px;
+		margin-right : 25px;
 	}
-
 	#preview{
 		max-width: 270px;
 		height: 170px;
