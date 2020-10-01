@@ -82,7 +82,7 @@ h6 { font-size: 16px;}
 	display: grid;
 	text-align: center;
 	align-content: center;
-	min-height: 12em;
+	min-height: 7em;
 }
 
 .intro-wrapper{
@@ -390,7 +390,7 @@ input:checked + .slider:before {
 	}
 
 	.greeting-wrapper{
-		min-height: 17.5em;
+		min-height: 10em;
 	}
 
 	.main-container{
