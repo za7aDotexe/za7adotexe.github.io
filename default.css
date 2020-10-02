@@ -82,7 +82,7 @@ h6 { font-size: 16px;}
 	display: grid;
 	text-align: center;
 	align-content: center;
-	min-height: 7em;
+	height: 8em;
 }
 
 .intro-wrapper{
@@ -101,6 +101,7 @@ h6 { font-size: 16px;}
 		'nav-wrapper nav-wrapper'
 		'left-column right-column'
 	;
+	height: 80%;
 }
 
 .nav-wrapper{
@@ -167,6 +168,10 @@ h6 { font-size: 16px;}
     width: 200px;
 	object-fit: cover;
 	/* border:2px solid var(--borderColor); */
+}
+
+#disable {
+	display: none;
 }
 
 .theme-switch-wrapper {
@@ -295,9 +300,14 @@ input:checked + .slider:before {
 	background-color: var(--previewShadow);
 }
 .social-links{
-	display: grid;
+	font-size: 2rem;
+	display: inline-flexbox;
 	align-content: center;
 	text-align: center;
+}
+
+.fab {
+	margin: 0 5px 0 5px;
 }
 
 #social_img{

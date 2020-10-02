@@ -14,6 +14,12 @@
 
 
 	--buttonColor:#17a2b8;
+}
 
+#disable {
+	display: block;
+}
 
+#enable {
+	display: none;
 }
