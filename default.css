@@ -49,7 +49,6 @@ body *{
 	background-image: linear-gradient(135deg, #366a9b 0%, #192734 100%);
 	align-items: center;
 	justify-content: center;
-	flex-direction: column;
 	font-size: 3em;
 	color: #17a2b8;
 	z-index: 1;
