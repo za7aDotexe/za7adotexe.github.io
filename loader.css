@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Averia Sans Libre', cursive;
+    font-size: 18px;
+    line-height: 1.6;
+    background-image: linear-gradient(135deg, #366a9b 0%, #192734 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+
+/* LOADER  */
+.loader {
+  font-size: 3em;
+  color: #17a2b8;
+}
+
+.loader::after {
+  content: '...';
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  animation: dots steps(4, end) 2s infinite;
+  width: 0px;
+}
+
+@keyframes dots {
+  to {
+    width: 1em;
+  }
+}
