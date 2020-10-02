@@ -30,6 +30,52 @@ body *{
 	transition: 0.3s;
 }
 
+.main {
+	display: none;
+}
+.show-main{
+	display: block;
+}
+
+/* LOADER  */
+.loader {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	font-size: 18px;
+	line-height: 1.6;
+	background-image: linear-gradient(135deg, #366a9b 0%, #192734 100%);
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 3em;
+	color: #17a2b8;
+	z-index: 1;
+}
+
+.loader-finish {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.loader::after {
+	content: '...';
+	display: block;
+	overflow: hidden;
+	/* vertical-align: bottom; */
+	animation: dots steps(4, end) 2s infinite;
+	width: 0px;
+}
+
+@keyframes dots {
+	to {
+		width: 1em;
+	}
+}
+
+
 h1, h2, h3, h4, h5, h6, strong{
 	color: var(--mainText);
 	font-weight: 500;
