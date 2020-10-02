@@ -14,7 +14,6 @@
 	<section class="s1">
 		<div class="main-container">
 			<div class="greeting-wrapper">
-				<!-- <h1>Hello World 😀! I'm Rabie ZAHA 🤙</h1> -->
 				<h2 id="typed3"></h2>
 			</div>
 
@@ -176,19 +175,19 @@
 		<div class="main-container">
 			<h3 style="text-align: center;">Get In Touch</h3>
 
-			<form id="contact-form">
+			<form id="contact-form" action="//www.enformed.io/YOUR_TOKEN" method="post">
 
 				<label>Name</label>
-				<input class="input-field" type="text" name="name">
+				<input class="input-field" type="text" name="name" required>
 
 				<label>Subject</label>
-				<input class="input-field" type="text" name="subject">
+				<input class="input-field" type="text" name="subject" required>
 
 				<label>Email</label>
-				<input class="input-field" type="text" name="email">
+				<input class="input-field" type="email" name="email" required>
 
 				<label>Message</label>
-				<textarea class="input-field" name="message"></textarea>
+				<textarea class="input-field" name="message" required></textarea>
 
 				<input id="submit-btn" type="submit" value="Send">
 			</form>
@@ -204,7 +203,7 @@
 				'⚡ Fun fact About me ...',
                 'i made terrible pancakes Haha'
 				],
-			backDelay: 3000,
+			backDelay: 1500,
             typeSpeed: 70,
             backSpeed: 70,
             smartBackspace: true, // this is a default
