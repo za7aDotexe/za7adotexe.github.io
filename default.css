@@ -151,7 +151,7 @@ h6 { font-size: 16px;}
 .nav-wrapper{
 	display: flex;
 	border-radius:5px 5px 0 0;
-	grid-area:nav-wrapper;
+	grid-area: nav-wrapper;
 	border-bottom: 1px solid var(--borderColor);
 	justify-content: space-between;
 	align-items: center;
@@ -159,8 +159,7 @@ h6 { font-size: 16px;}
 }
 
 #navigation {
-    margin: 0;
-    padding: 10px;
+	display: flex;
 }
 
 #navigation li {
@@ -338,6 +337,11 @@ input:checked + .slider:before {
 	gap:100px;
 }
 
+.about-wrapper h4 {
+	color: #17a2b8;
+}
+
+
 #skills{
 	display: flex;
 	justify-content: space-evenly;
@@ -347,15 +351,42 @@ input:checked + .slider:before {
 	font-size: 2rem;
 	display: inline-flexbox;
 	align-content: center;
-	text-align: center;
+	
+}
+
+.timeline-item {
+	border-left: 2px solid #fff;
+}
+
+.timeline-item > h4  {
+	text-align: left;
+	margin: 0 0 0 15px;
+	padding: 0;
+}
+
+.year::before  {
+	display: block;
+	position: relative;
+	content: '';
+	width: 15px;
+	height: 15px;
+	left: -23px;
+	top: 20px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: 400;
+}
+
+.timeline-item > p  {
+	text-align: left;
+	font-size: 20px;
+	margin: 0 0 0 15px;
+	padding: 0;
 }
 
 .fab {
 	margin: 0 5px 0 5px;
-}
-
-#social_img{
-	width: 100%;
+	color: white;
 }
 
 .post-wrapper{
@@ -437,12 +468,18 @@ input:checked + .slider:before {
 	border-radius: 5px;
 }
 
-@media screen and (max-width: 1200px){
-	#navigation li {
-		display: inline-block;
-		margin: 0 5px 0 5px;
-	}
+.footer {
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
+.footer h4 {
+	margin-right: 10px;
+}
+
+@media screen and (max-width: 1200px){
 	.greeting-wrapper{
 		min-height: 10em;
 	}
@@ -450,9 +487,15 @@ input:checked + .slider:before {
 	.main-container{
 		width: 95%;
 	}
+	#preview-shadow{
+		margin-right : 35px;
+	}
 }
 
 @media screen and (max-width: 800px){
+	#navigation li {
+		margin: 0 5px 0 5px;
+	}
 	.intro-wrapper{
 		grid-template-columns: 1fr;
 		grid-template-areas: 
@@ -461,22 +504,35 @@ input:checked + .slider:before {
 			'right-column'
 		;
 	}
-
 }
 
 @media screen and (max-width: 400px){
 	#preview-shadow{
-		max-width: 280px;
-		height: 180px;
+		max-width: 250px;
+		height: 220px;
 		padding-left: 25px;
 		padding-top: 25px;
-		margin-right : 25px;
 	}
 	#preview{
-		max-width: 270px;
-		height: 170px;
+		max-width: 250px;
+		height: 210px;
 	}
 
+	.social-links {
+		margin-top: -90px;
+	}
+
+	.about-wrapper h4 {
+		text-align: center;
+	}
+	.timeline-item h4 {
+		text-align: left;
+	}
+
+	.timeline-item {
+		width: 40%;
+		margin: 0 auto;
+	}
+
+
 }
-
-
