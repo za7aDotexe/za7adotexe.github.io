@@ -504,6 +504,13 @@ input:checked + .slider:before {
 			'right-column'
 		;
 	}
+	.social-links {
+		margin-top: -90px;
+	}
+
+	.about-wrapper h4 {
+		text-align: center;
+	}
 }
 
 @media screen and (max-width: 400px){
