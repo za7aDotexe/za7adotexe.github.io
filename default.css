@@ -351,7 +351,7 @@ input:checked + .slider:before {
 }
 
 .timeline-item {
-	border-left: 2px solid #fff;
+	border-left: 2px solid var(--mainText);
 }
 
 .timeline-item > h4  {
@@ -368,7 +368,7 @@ input:checked + .slider:before {
 	height: 15px;
 	left: -23px;
 	top: 20px;
-	background-color: white;
+	background-color: #17a2b8;
 	border-radius: 50%;
 	z-index: 400;
 }
